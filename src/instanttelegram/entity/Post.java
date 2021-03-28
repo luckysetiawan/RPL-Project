@@ -31,7 +31,7 @@ public class Post {
     public Post() {
     }
 
-    public Post(int idPost,String _caption, int _likes, String _postSrc, Date _postTime) {
+    public Post(int _idPost, String _caption, int _likes, String _postSrc, Date _postTime) {
         this.idPost = _idPost;
         this.caption = _caption;
         this.likes = _likes;
@@ -96,22 +96,5 @@ public class Post {
     public void setIdPost(int _idPost) {
         this.idPost = _idPost;
     }
-    
-//    @Override
-//    public String toString() {
-//        return "Post{" + "idPost = " + idPost + ",caption = " + caption + ", postTime = " + postTime + ", likes = " + likes + ", postSrc = " + postSrc + ", listOfComment=" + Comment + ", author = " + User +'}';
-//    }
-    
-
-//    public String getUsername_user() {
-//        return username_user;
-//    }
-
-//    public void setUsername_user(String username_user) {
-//        this.username_user = username_user;
-//    }
-
-    
-
     
 }

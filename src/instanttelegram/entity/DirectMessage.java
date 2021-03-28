@@ -20,11 +20,11 @@ public class DirectMessage {
     User receiver;
     String message;
 
-    public void setMessage(String _message){
+    public void setMessage(String _message) {
             this.message = _message;
     }
     
-    private void sendDirectMessage(User _username,String _message){
+    private void sendDirectMessage(User _username,String _message) {
             //username.dm.setMessage(message);		//dm = object dalam user
             //username.dm.setReceiver(username);
     }

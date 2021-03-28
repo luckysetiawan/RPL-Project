@@ -11,11 +11,11 @@ import java.util.Date;
  * 
  * Created on March 27, 2021, 20:00 PM 
  */
-
 /**
- *
+ * Kelas Story yang berisi atribut untuk Story. 
  * @author MelvinS
  */
+
 public class Story {
     private Date storyTime;
     private User author;

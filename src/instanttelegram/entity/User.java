@@ -18,7 +18,7 @@ import java.util.Scanner;
  * Kelas User yang berisi atribut user dan fungsi/prosedur untuk user. 
  * @author NealsonW
  */
-public class User extends Account{
+public class User extends Account {
     User user = new User();
     private String profilePic;
     private String biography;
@@ -60,7 +60,7 @@ public class User extends Account{
         this.listUser = _listUser;
     }
     
-    public void addUser(User _user){
+    public void addUser(User _user) {
         listUser.add(_user);
     }
     public ArrayList<Post> getListOfPost() {
@@ -113,7 +113,7 @@ public class User extends Account{
         //ArrayList<User> listUser = Controller.getAllUser();
         //Mengecek apakah user sudah terdaftar
         for(int i = 0; i < user.getListUser().size(); i++) {
-            if(_username.equals(user.getListUser().get(i).getUsername()) && _password.equals(user.getListUser().get(i).getPassword())){
+            if(_username.equals(user.getListUser().get(i).getUsername()) && _password.equals(user.getListUser().get(i).getPassword())) {
                 return true;
             }    
         }
@@ -154,15 +154,15 @@ public class User extends Account{
             }
         }
         
-        if(isValid == true){
+        if(isValid == true) {
             //update data profile user di database
             //Controller.updateUserProfile(String profilePic, String biography, String fullname, String username, String email, String password, String gender, String phoneNum);
-        }else{
+        } else {
             System.out.print("Perubahan profile gagal dilakukan"); 
         }
     }
     
-    public void logout(){
+    public void logout() {
         System.out.println("logout success");
         return;
     }
@@ -214,7 +214,7 @@ public class User extends Account{
         //list dari post yang diterbitkan oleh user
         //ArrayList<Post> listOwnPost = Controller.getUserPost(user.getUsername());
         user.getListOfPost();
-        for(int i = 0; /*i<listOwnPost.size()*/ _user.getListOfPost().get(i).size(); i++ {
+        for(int i = 0; /*i<listOwnPost.size()*/ _user.getListOfPost().get(i).size(); i++) {
             System.out.println(user.getListOfPost().get(i).getAuthor()
             ,_user.getListOfPost().get(i).getPostSrc()
             ,_user.getListOfPost().get(i).getCaption()
@@ -228,7 +228,7 @@ public class User extends Account{
         //list dari barang yang dijual yang tersimpan pada database
         //ArrayList<Shop> listOfItems = Controller.getItems();
         /*
-            for(int i=0; i<listOfItems.size();){
+            for(int i = 0; i < listOfItems.size(); i++){
                 System.out.println(listOfItems.get(i).getItemSource()
                 ,listOfItems.get(i).getItemName()
                 ,listOfItems.get(i).getShopName());
